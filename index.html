@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="G3DST: Generalizing 3D Style Transfer with Neural Radiance Fields across Scenes and Styles">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>G3DST: Generalizing 3D Style Transfer with Neural Radiance Fields across Scenes and Styles</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://www.linkedin.com/in/adilmeric/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">G3DST: Generalizing 3D Style Transfer with Neural Radiance Fields across Scenes and Styles</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/mericadil">Adil Meric</a>,</span>
+            <span class="author-block">
+              <a href="https://kocasariumut.github.io/">Umut Kocasari</a>,</span>
+            <span class="author-block">
+              <a href="https://niessnerlab.org/members/matthias_niessner/profile.html">Matthias Nießner</a>,
+            <span class="author-block">
+              <a href="https://niessnerlab.org/members/barbara_roessle/profile.html">Barbara Roessle</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Technical University of Munich</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://www.arxiv.org/pdf/2408.13508"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://www.arxiv.org/abs/2408.13508"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.tum.de/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/mericadil"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.jpeg">
+      <h2 class="subtitle has-text-centered">
+        Given a set of source views and a style image, our method renders view-consistent, stylized novel views without any per-scene or per-style optimization.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Neural Radiance Fields (NeRF) have emerged as a powerful tool for creating highly detailed and photorealistic scenes. Existing methods for NeRF-based 3D style transfer need extensive per-scene optimization for single or multiple styles, limiting the applicability and efficiency of 3D style transfer. In this work, we overcome the limitations of existing methods by rendering stylized novel views from a NeRF without the need for per-scene or per-style optimization. To this end, we take advantage of a generalizable NeRF model to facilitate style transfer in 3D, thereby enabling the use of a single learned model across various scenes. By incorporating a hypernetwork into a generalizable NeRF, our approach enables on-the-fly generation of stylized novel views. Moreover, we introduce a novel flow-based multi-view consistency loss to preserve consistency across multiple views. We evaluate our method across various scenes and artistic styles and show its performance in generating high-quality and multi-view consistent stylized images without the need for a scene-specific implicit model. Our findings demonstrate that this approach not only achieves a good visual quality comparable to that of per-scene methods but also significantly enhances efficiency and applicability, marking a notable advancement in the field of 3D style transfer.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="has-text-centered">
+        <h2 class="title is-3">Framework</h2></div>
+        <div>
+            <img src="./static/images/main_figure.png">
+        </div>
+        <p>
+          We utilize a hypernetwork to apply a style transformation to the features of a generalizable transformer-based NeRF. The hypernetwork takes a style latent vector as input and outputs weights and biases of an intermediate MLP, which stylizes the aggregated ray features. This operation is repeated for each ray in the image to produce a high quality stylized image. We calculate the optical flow between source views and minimize the difference between corresponding pixels in stylized images.
+        </p>
+      </div>
+    </div>
+
+  <!-- Paper video. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Video</h2>
+      <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/7fjaCKePmis?rel=0&amp;showinfo=0"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!--/ Paper video. -->
+</div>
+
+  <div class="columns is-centered">
+    <div class="column is-full-width">
+      <h2 class="title is-3">Results</h2>
+      <div class="content has-text-justified"></div>
+      <div class="columns is-multiline">  
+        <div class="column is-one-third has-text-centered">
+            <b>Scene</b>
+            <div class="embed-responsive embed-responsive-4by3">
+                <video controls loop muted autoplay class="embed-responsive-item" style="width:100%; height:auto;">
+                    <source src="static/videos/trex.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+  
+        <div class="column is-one-third has-text-centered">
+            <span>Style Image</span>
+            <div class="embed-responsive embed-responsive-4by3" style="display: flex; justify-content: center; align-items: center; padding-top: 10%;" >
+              <img src="static/images/pablo-picasso_the-family-of-blind-man-1903.jpg" alt="Style Image" style="width:75%; height:auto;">
+          </div>
+        </div>
+  
+        <div class="column is-one-third has-text-centered">
+            <span>Stylized Scene</span>
+            <div class="embed-responsive embed-responsive-4by3">
+                <video controls loop muted autoplay class="embed-responsive-item" style="width:100%; height:auto;">
+                    <source src="static/videos/trex_stylized-converted.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+      </div>
+
+      <div class="columns is-multiline">  
+        <div class="column is-one-third has-text-centered">
+            <b>Scene</b>
+            <div class="embed-responsive embed-responsive-4by3">
+                <video controls loop muted autoplay class="embed-responsive-item" style="width:100%; height:auto;">
+                    <source src="static/videos/horns-converted.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+  
+        <div class="column is-one-third has-text-centered">
+            <span>Style Image</span>
+            <div class="embed-responsive embed-responsive-4by3" style="display: flex; justify-content: center; align-items: center; padding-top: 10%;" >
+              <img src="static/images/oskar-kokoschka_not_detected_235932.jpg" alt="Style Image" style="width:75%; height:auto;">
+          </div>
+        </div>
+  
+        <div class="column is-one-third has-text-centered">
+            <span>Stylized Scene</span>
+            <div class="embed-responsive embed-responsive-4by3">
+                <video controls loop muted autoplay class="embed-responsive-item" style="width:100%; height:auto;">
+                    <source src="static/videos/horns_stylized-converted.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+
+<footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link"
+           href="https://tum.de">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/mericadil" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Website source code borrowed from <a href="https://keunhong.com">Keunhong Park</a>'s <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies website</a>. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
