@@ -3,22 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="G3DST: Generalizing 3D Style Transfer with Neural Radiance Fields across Scenes and Styles">
+        content="CoMoGen: COntrollable MOtion Dynamics and Interactions with Mask-Guided Video GENeration">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>G3DST: Generalizing 3D Style Transfer with Neural Radiance Fields across Scenes and Styles</title>
+  <title>CoMoGen: COntrollable MOtion Dynamics and Interactions with Mask-Guided Video GENeration</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
@@ -40,6 +35,7 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -53,51 +49,44 @@
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://www.linkedin.com/in/adilmeric/">
-      <span class="icon">
+        <span class="icon">
           <i class="fas fa-home"></i>
-      </span>
+        </span>
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          More Research
+          More
         </a>
         <div class="navbar-dropdown">
+          <!-- Add dropdown items here if you want -->
+          <!-- <a class="navbar-item" href="...">Link</a> -->
         </div>
       </div>
     </div>
-
   </div>
 </nav>
-
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">G3DST: Generalizing 3D Style Transfer with Neural Radiance Fields across Scenes and Styles</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://github.com/mericadil">Adil Meric</a>,</span>
-            <span class="author-block">
-              <a href="https://kocasariumut.github.io/">Umut Kocasari</a>,</span>
-            <span class="author-block">
-              <a href="https://niessnerlab.org/members/matthias_niessner/profile.html">Matthias Nießner</a>,
-            <span class="author-block">
-              <a href="https://niessnerlab.org/members/barbara_roessle/profile.html">Barbara Roessle</a>
-            </span>
-          </div>
+          <h1 class="title is-1 publication-title">
+            CoMoGen: COntrollable MOtion Dynamics and Interactions with Mask-Guided Video GENeration
+          </h1>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Technical University of Munich</span>
+            <span class="author-block">
+              <a href="https://github.com/mericadil">Adil Meric</a>
+            </span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
+              <!-- Replace these links when ready -->
               <span class="link-block">
-                <a href="https://www.arxiv.org/pdf/2408.13508"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -105,8 +94,9 @@
                   <span>Paper</span>
                 </a>
               </span>
+
               <span class="link-block">
-                <a href="https://www.arxiv.org/abs/2408.13508"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -114,9 +104,9 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
+
               <span class="link-block">
-                <a href="https://www.tum.de/"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -124,159 +114,333 @@
                   <span>Video</span>
                 </a>
               </span>
+
               <span class="link-block">
-                <a href="https://github.com/mericadil"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                      <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
                 </a>
               </span>
             </div>
-
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Optional teaser section (empty for now, add your own image/caption later) -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/teaser.jpeg">
-      <h2 class="subtitle has-text-centered">
-        Given a set of source views and a style image, our method renders view-consistent, stylized novel views without any per-scene or per-style optimization.
-      </h2>
+      <!-- Replace with your teaser image when ready -->
+      <!-- <img src="./static/images/teaser.jpeg" alt="Teaser"> -->
+      <!-- <h2 class="subtitle has-text-centered">Your teaser caption here.</h2> -->
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
+
+    <!-- Abstract placeholder -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Neural Radiance Fields (NeRF) have emerged as a powerful tool for creating highly detailed and photorealistic scenes. Existing methods for NeRF-based 3D style transfer need extensive per-scene optimization for single or multiple styles, limiting the applicability and efficiency of 3D style transfer. In this work, we overcome the limitations of existing methods by rendering stylized novel views from a NeRF without the need for per-scene or per-style optimization. To this end, we take advantage of a generalizable NeRF model to facilitate style transfer in 3D, thereby enabling the use of a single learned model across various scenes. By incorporating a hypernetwork into a generalizable NeRF, our approach enables on-the-fly generation of stylized novel views. Moreover, we introduce a novel flow-based multi-view consistency loss to preserve consistency across multiple views. We evaluate our method across various scenes and artistic styles and show its performance in generating high-quality and multi-view consistent stylized images without the need for a scene-specific implicit model. Our findings demonstrate that this approach not only achieves a good visual quality comparable to that of per-scene methods but also significantly enhances efficiency and applicability, marking a notable advancement in the field of 3D style transfer.
+            We present CoMoGen, a controllable video generation framework that generates realistic interactive dynamics from a single binary mask sequence conditioned on an input image. CoMoGen introduces a lightweight MaskAdapter that encodes binary mask sequences into a latent residual signal, injected into the Multi-Modal Diffusion Transformer (MMDiT) model through a cosine-weighted schedule. Unlike the hierarchical coarse-to-fine design of UNet architectures, MMDiT operates as a sequence of uniform transformer blocks, making it difficult to identify which layers are responsible for the motion generation. Therefore, we propose a novel way to determine "\layer" operating in the attention space of MMDiT. We fine-tune the model by using Low-Rank Adaptation (LoRA) to the \layer, without requiring any architecture change in the MMDiT. This selective adaptation enables our method to focus on motion-critical components, yielding reduced computational cost. Despite its simplicity, CoMoGen enables precise subject motion and physically plausible interactions with surrounding humans, objects, and scenes. Comprehensive experiments on different datasets, show that CoMoGen consistently outperforms prior controllable video generation methods and achieves state-of-the-art performance in motion fidelity and perceptual realism. Code will be released based on acceptance.          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results placeholder -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <!-- Add your result grids/videos here. -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Training Free Method -->
+
+<!-- Layer Analysis -->
+<div class="columns is-centered">
+  <div class="column is-full-width">
+    <h2 class="title is-3">Layer Analysis</h2>
+
+    <!-- Image titles -->
+    <div class="columns is-centered is-variable is-4" style="margin-bottom: 0.5rem;">
+      <div class="column is-half has-text-centered">
+        <h3 class="title is-5">Attention Visualization</h3>
+      </div>
+      <div class="column is-half has-text-centered">
+        <h3 class="title is-5">Attention Score Analysis</h3>
+      </div>
+    </div>
+
+    <!-- Images -->
+    <div class="columns is-centered is-variable is-4" style="margin-bottom: 1.5rem;">
+      <div class="column is-half has-text-centered">
+        <img src="./static/images/attention_vis.png"
+             alt="Attention visualization"
+             style="max-width:100%; height:auto;">
+      </div>
+      <div class="column is-half has-text-centered">
+        <img src="./static/images/layer_results.png"
+             alt="Attention score analysis"
+             style="max-width:100%; height:auto;">
+      </div>
+    </div>
+
+    <!-- Description -->
+<div class="content" style="margin-bottom: 1rem;">
+  <p>
+    We evaluate our method on 60 online videos. We report DAVIS benchmark metrics to measure mask alignment quality,
+    and we additionally compute a VQA score to assess text–video semantic accuracy.
+  </p>
+</div>
+
+<!-- VQA Score Table (4x2) -->
+<div class="content" style="margin-bottom: 1.5rem;">
+  <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered">
+    <thead>
+      <tr>
+        <th></th>
+        <th>VQA Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="has-text-left">Generated Video</th>
+        <td>0.4540</td>
+      </tr>
+      <tr>
+        <th class="has-text-left">Motion Layers</th>
+        <td>0.2742</td>
+      </tr>
+      <tr>
+        <th class="has-text-left">Non Motion Layers</th>
+        <td>0.4068</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+    <div class="content" style="margin-bottom: 1.5rem;">
+  <table class="table is-bordered is-striped is-hoverable is-fullwidth has-text-centered">
+    <thead>
+      <tr>
+        <th>DAVIS Metrics</th>
+        <th>J-Mean</th>
+        <th>J-Recall</th>
+        <th>J-Decay</th>
+        <th>F-Mean</th>
+        <th>F-Recall</th>
+        <th>F-Decay</th>
+        <th>J&amp;F</th>
+        <th>HOTA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="has-text-left">Motion Layers</th>
+        <td>60.161</td>
+        <td>71.020</td>
+        <td>26.614</td>
+        <td>59.984</td>
+        <td>63.435</td>
+        <td>29.584</td>
+        <td>60.073</td>
+        <td>57.332</td>
+      </tr>
+      <tr>
+        <th class="has-text-left">Non Motion Layers</th>
+        <td>77.768</td>
+        <td>91.156</td>
+        <td>17.726</td>
+        <td>81.133</td>
+        <td>88.844</td>
+        <td>19.297</td>
+        <td>79.451</td>
+        <td>82.313</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    <!-- 2 rows x 3 columns video grid -->
+    <div class="columns is-multiline is-variable is-4">
+
+      <!-- Row 1 -->
+      <div class="column is-one-third">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/layer_analysis/original.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-third">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/layer_analysis/skip_vital.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-third">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/layer_analysis/skip_non.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="column is-one-third">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/layer_analysis/original_.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-third">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/layer_analysis/skip_vital_.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-third">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/layer_analysis/skip_non_.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+    <!-- Bottom labels -->
+    <div class="columns is-mobile" style="margin-top: -0.5rem;">
+      <div class="column is-one-third has-text-centered">
+        <p class="is-size-6">Generated Video</p>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <p class="is-size-6">Skip Motion Layers</p>
+      </div>
+      <div class="column is-one-third has-text-centered">
+        <p class="is-size-6">Skip Non-Motion Layers</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- /Layer Analysis -->
+
+
+<div class="columns is-centered">
+  <div class="column is-full-width">
+    <h2 class="title is-3">Training Free Method</h2>
+    Calculating gradients from the Motion Layers and iteratively updating the input noise, we can generate videos without any training.
+    <!-- Method figure (image instead of PDF) -->
+    <div class="content has-text-centered" style="margin-bottom: 1.5rem;">
+      <img src="./static/images/old_method.png"
+           alt="Training-free method overview"
+           style="max-width: 75%; height: auto;">
+    </div>
+
+    <!-- 2x4 video grid -->
+    <div class="columns is-multiline is-variable is-4">
+
+      <!-- Row 1 -->
+      <div class="column is-one-quarter">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto; filter: grayscale(100%);">
+        <source src="./static/videos/resave_mask.webm" type="video/webm">
+      </video>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/resave_exp.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/resave_exp2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/resave_exp3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="column is-one-quarter">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/deneme.webm" type="video/webm">
+        </video>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/resave_multi_1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/resave_multi_2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls loop muted autoplay playsinline style="width:100%; height:auto;">
+          <source src="./static/videos/resave_multi_3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+    <!-- Bottom labels row -->
+    <div class="columns is-mobile" style="margin-top: -0.5rem;">
+      <div class="column is-one-quarter has-text-centered">
+        <p class="is-size-6">Reference Mask</p>
+      </div>
+      <div class="column is-one-quarter has-text-centered">
+        <p class="is-size-6">Generation 1</p>
+      </div>
+      <div class="column is-one-quarter has-text-centered">
+        <p class="is-size-6">Generation 2</p>
+      </div>
+      <div class="column is-one-quarter has-text-centered">
+        <p class="is-size-6">Generation 3</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- /Training Free Method -->
+
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <!-- Update these or remove if you don’t want icons -->
+      <a class="icon-link" href="#">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/mericadil">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website source code borrowed from <a href="https://keunhong.com">Keunhong Park</a>'s
+            <a href="https://github.com/nerfies/nerfies.github.io">Nerfies website</a>.
           </p>
         </div>
       </div>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <div class="has-text-centered">
-        <h2 class="title is-3">Framework</h2></div>
-        <div>
-            <img src="./static/images/main_figure.png">
-        </div>
-        <p>
-          We utilize a hypernetwork to apply a style transformation to the features of a generalizable transformer-based NeRF. The hypernetwork takes a style latent vector as input and outputs weights and biases of an intermediate MLP, which stylizes the aggregated ray features. This operation is repeated for each ray in the image to produce a high quality stylized image. We calculate the optical flow between source views and minimize the difference between corresponding pixels in stylized images.
-        </p>
-      </div>
-    </div>
-
-  <!-- Paper video. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Video</h2>
-      <div class="publication-video">
-        <iframe src="https://www.youtube.com/embed/7fjaCKePmis?rel=0&amp;showinfo=0"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-    </div>
   </div>
-  <!--/ Paper video. -->
-</div>
-
-  <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-3">Results</h2>
-      <div class="content has-text-justified"></div>
-      <div class="columns is-multiline">  
-        <div class="column is-one-third has-text-centered">
-            <b>Scene</b>
-            <div class="embed-responsive embed-responsive-4by3">
-                <video controls loop muted autoplay class="embed-responsive-item" style="width:100%; height:auto;">
-                    <source src="static/videos/trex.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-  
-        <div class="column is-one-third has-text-centered">
-            <span>Style Image</span>
-            <div class="embed-responsive embed-responsive-4by3" style="display: flex; justify-content: center; align-items: center; padding-top: 10%;" >
-              <img src="static/images/pablo-picasso_the-family-of-blind-man-1903.jpg" alt="Style Image" style="width:75%; height:auto;">
-          </div>
-        </div>
-  
-        <div class="column is-one-third has-text-centered">
-            <span>Stylized Scene</span>
-            <div class="embed-responsive embed-responsive-4by3">
-                <video controls loop muted autoplay class="embed-responsive-item" style="width:100%; height:auto;">
-                    <source src="static/videos/trex_stylized-converted.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-      </div>
-
-      <div class="columns is-multiline">  
-        <div class="column is-one-third has-text-centered">
-            <b>Scene</b>
-            <div class="embed-responsive embed-responsive-4by3">
-                <video controls loop muted autoplay class="embed-responsive-item" style="width:100%; height:auto;">
-                    <source src="static/videos/horns-converted.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-  
-        <div class="column is-one-third has-text-centered">
-            <span>Style Image</span>
-            <div class="embed-responsive embed-responsive-4by3" style="display: flex; justify-content: center; align-items: center; padding-top: 10%;" >
-              <img src="static/images/oskar-kokoschka_not_detected_235932.jpg" alt="Style Image" style="width:75%; height:auto;">
-          </div>
-        </div>
-  
-        <div class="column is-one-third has-text-centered">
-            <span>Stylized Scene</span>
-            <div class="embed-responsive embed-responsive-4by3">
-                <video controls loop muted autoplay class="embed-responsive-item" style="width:100%; height:auto;">
-                    <source src="static/videos/horns_stylized-converted.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
- 
-
-<footer class="footer">
-    <div class="container">
-      <div class="content has-text-centered">
-        <a class="icon-link"
-           href="https://tum.de">
-          <i class="fas fa-file-pdf"></i>
-        </a>
-        <a class="icon-link" href="https://github.com/mericadil" class="external-link" disabled>
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              Website source code borrowed from <a href="https://keunhong.com">Keunhong Park</a>'s <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies website</a>. 
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+</footer>
 
 </body>
 </html>
+
